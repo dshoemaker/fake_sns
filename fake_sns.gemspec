@@ -18,11 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "sinatra", "~> 1.4"
+  spec.add_dependency "sinatra", "~> 2.0"
   spec.add_dependency "virtus", "~> 1.0"
   spec.add_dependency "verbose_hash_fetch"
-  spec.add_dependency "faraday", "~> 0.8"
-  spec.add_dependency 'aws-sdk', '~> 2.0'
+  spec.add_dependency "faraday", "0.15.4"
+  spec.add_dependency "aws-sdk", git: "git@github.com:aws/aws-sdk-ruby.git", branch: "aws-sdk-v1", ref: "74ba5eb8eb0c083ba03d3d3c01ec04fa1e51f421"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
